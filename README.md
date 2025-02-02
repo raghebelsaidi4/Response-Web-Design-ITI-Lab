@@ -1,1 +1,1 @@
-# Response-Web-Design-ITI-Lab (Bootstrap, SASS, Tailwind)
+# Response-Web-Design-ITI-Lab (Bootstrap, SASS)
