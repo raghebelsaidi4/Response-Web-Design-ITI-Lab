@@ -1,0 +1,57 @@
+// main.scss
+
+@import 'mixins';
+@import 'functions';
+
+// Variables
+$success-color: #4CAF50;
+$warning-color: #FFC107;
+$msg-color: #2196F3;
+$error-color: #f44336;
+$text-light: #fff;
+$text-dark: #000;
+
+// Shared alert class
+.alert {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+
+  &.success {
+    @include alert-style($success-color, $text-light);
+  }
+
+  &.msg {
+    @include alert-style($msg-color, $text-light);
+  }
+
+  &.warning {
+    @include alert-style($warning-color, $text-dark);
+  }
+
+  &.error {
+    @include alert-style($error-color, $text-light);
+  }
+}
+
+// Animation example
+div {
+  @include animation(2s, ease-in);
+}
+
+// Example of using @if, @for, @each
+$colors: ('red': #FF0000, 'green': #00FF00, 'blue': #0000FF);
+
+@each $color-name, $color-value in $colors {
+  .#{$color-name} {
+    background-color: $color-value;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+
+    &:hover {
+      background-color: lighten($color-value, 10%);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+// _mixins.scss
+
+@mixin animation($duration, $ease) {
+    animation: fadeIn $duration $ease;
+  }
+  
+  @mixin alert-style($bg-color, $text-color) {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: $text-color;
+    background-color: $bg-color;
+    font-weight: bold;
+  
+    &:hover {
+      background-color: lighten($bg-color, 10%);
+    }
+  }
+  

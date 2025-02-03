@@ -1,0 +1,14 @@
+// _functions.scss
+
+@function random-color() {
+    @return rgb(random(256), random(256), random(256));
+  }
+  
+  @function lighten-color($color, $amount) {
+    @return lighten($color, $amount);
+  }
+  
+  @function darken-color($color, $amount) {
+    @return darken($color, $amount);
+  }
+  

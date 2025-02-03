@@ -1,0 +1,73 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 6vw; /* Viewport units for responsive font size */
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 3vw;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Main Content */
+main {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr); /* 16-column layout */
+    gap: 1rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+.about, .skills, .experience {
+    grid-column: span 16; /* Full width for all sections */
+}
+
+/* Responsive Grid for Tablet and Desktop */
+@media (min-width: 768px) {
+    .about {
+        grid-column: span 8; /* Half width for tablet and desktop */
+    }
+    .skills {
+        grid-column: span 8;
+    }
+    .experience {
+        grid-column: span 16;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
+}

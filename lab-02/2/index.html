@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Content</title>
+    <style>
+        /* Basic styling for the content */
+        .content {
+            padding: 20px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            margin-top: 10px;
+            display: none; /* Initially hidden */
+        }
+
+        .content.visible {
+            display: block; /* Show content */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Toggle Content Example</h1>
+        <button id="toggleButton">Show Content</button>
+        <div id="content" class="content">
+            <p>This is the content that will be shown or hidden when you click the button.</p>
+            <p>You can add any HTML content here, such as images, lists, or more text.</p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to toggle content visibility
+        const toggleButton = document.getElementById('toggleButton');
+        const content = document.getElementById('content');
+
+        toggleButton.addEventListener('click', () => {
+            // Toggle the 'visible' class on the content
+            content.classList.toggle('visible');
+
+            // Change the button text based on content visibility
+            if (content.classList.contains('visible')) {
+                toggleButton.textContent = 'Hide Content';
+            } else {
+                toggleButton.textContent = 'Show Content';
+            }
+        });
+    </script>
+</body>
+</html>

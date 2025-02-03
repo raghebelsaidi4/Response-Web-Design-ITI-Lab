@@ -1,0 +1,94 @@
+/* main.css */
+
+/* Shared Alert Styles */
+.alert {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .alert.success {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4caf50;
+    font-weight: bold;
+  }
+  .alert.success:hover {
+    background-color: #66bb6a;
+  }
+  .alert.msg {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2196f3;
+    font-weight: bold;
+  }
+  .alert.msg:hover {
+    background-color: #42a5f5;
+  }
+  .alert.warning {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #000;
+    background-color: #ffc107;
+    font-weight: bold;
+  }
+  .alert.warning:hover {
+    background-color: #ffca28;
+  }
+  .alert.error {
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #f44336;
+    font-weight: bold;
+  }
+  .alert.error:hover {
+    background-color: #e57373;
+  }
+  
+  /* Animation for Divs */
+  div {
+    animation: fadeIn 2s ease-in;
+  }
+  
+  /* Red, Green, Blue Box Styles */
+  .red {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+  }
+  .red:hover {
+    background-color: #ff3333;
+  }
+  .green {
+    background-color: #00ff00;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+  }
+  .green:hover {
+    background-color: #33ff33;
+  }
+  .blue {
+    background-color: #0000ff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+  }
+  .blue:hover {
+    background-color: #3333ff;
+  }
+  
+  /* Keyframes for the fadeIn animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
